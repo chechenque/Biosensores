@@ -36,7 +36,7 @@ public class Grises {
      * @throws IOException 
      */
     public void guardaImagen(BufferedImage imagen, String nombre) throws IOException{
-        ImageIO.write(imagen,"png",new File(nombre));
+        ImageIO.write(imagen,"png",new File(nombre+".png"));
     }
     
     /**
