@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -227,6 +228,9 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         }catch(IOException ex){
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -240,6 +244,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -253,6 +259,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -266,6 +274,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -279,6 +289,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -292,6 +304,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -306,6 +320,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -320,6 +336,8 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -333,6 +351,9 @@ public class Ventana extends javax.swing.JFrame {
             File borrar = new File("./temp,png");
             
             System.out.println(borrar.delete());
+            
+            int prom = gris.obtenPromedioDeGris(imagenB);
+            JOptionPane.showMessageDialog(null, "Promedio de Gris en la imagen: "+prom+"\n"+gris.concentracion(prom));
         } catch (IOException ex) {
             Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
         }

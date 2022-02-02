@@ -36,7 +36,7 @@ public class Grises {
      * @throws IOException 
      */
     public void guardaImagen(BufferedImage imagen, String nombre) throws IOException{
-        ImageIO.write(imagen,"png",new File(nombre+".png"));
+        ImageIO.write(imagen,"png",new File(nombre));
     }
     
     /**
@@ -264,5 +264,54 @@ public class Grises {
 
         return newImage;
     }
+    
+    /**
+     * Metodo que nos da la cantidad promedio de cada Canal
+     * @param img
+     * @return Una cadena con las cantidades promedio
+     */
+    public int obtenPromedioDeGris(BufferedImage img){
+        int ancho = img.getWidth();
+        int alto = img.getHeight();
+        long total = 0;
+        
+        for(int y = 0; y < alto; ++y){
+            for(int x = 0; x < ancho; ++x){
+                int pixel = img.getRGB(x,y);
+                Color c = new Color(pixel);
+                
+                total += c.getRed();
 
+
+            }
+        }
+        
+        int div = alto * ancho;
+        
+        return (int)(total/div);
+    }
+
+    
+    public String concentracion(int total){
+        //0 -> 153
+        //10 -> 151
+        //30 -> 142
+        //60 -> 128
+        //90 -> 125
+        //sample -> [134,131]
+        String cadena = "La concentracion es posiblemente de: ";
+        if(total >= 153){
+            return cadena + 0;
+        }else if(total < 153 && total >= 151){
+            return cadena + 10;
+        }else if(total < 151 && total >= 142){
+            return cadena + 30;
+        }else if(total < 142 && total >= 128){
+            return cadena + 60;
+        }else if(total < 128 && total >= 120){
+            return cadena + 90;
+        }else{
+            return "No fue posible determinar la concentracion, posiblmente sea la muestra";
+        }
+    }
 }
